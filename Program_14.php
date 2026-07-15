@@ -52,7 +52,6 @@ if(isset($_POST['submit']))
     $image = $_FILES['image']['name'];
     $temp = $_FILES['image']['tmp_name'];
 
-    // Create images folder if not exists
     if(!is_dir("images"))
     {
         mkdir("images",0777,true);
