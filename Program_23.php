@@ -31,10 +31,10 @@
             if($result){
                 echo "Password Updated Successfully";
             }else{
-                echo "Error in Updating Password";
+                echo "<h4 style='color:red;'>Error in Updating Password</h4>";
             }
         }else{
-            echo "Password and Confirm Password do not match";
+            echo "<h4 style='color:red;'>Password and Confirm Password do not match</h4>";
         }
     }
 ?>
