@@ -1,15 +1,28 @@
-<input value="6">
-<input value="4">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
 
-<button>Multiply</button>
+    <h2>Multiplication using Element Selector</h2>
 
-<p id="result"></p>
+    <input type="number" placeholder="Enter number 1">
+    <input type="number" placeholder="Enter number 2">
 
-<script>
-$("button").click(function() {
-    var a = Number($("input").eq(0).val());
-    var b = Number($("input").eq(1).val());
+    <button id="multiply">Multiply</button>
 
-    $("#result").text("Result = " + (a * b));
-});
-</script>
+    <p id="result"></p>
+
+    <script>
+        $("#multiply").click(function() {
+            var a = Number($("input").eq(0).val());
+            var b = Number($("input").eq(1).val());
+
+            $("#result").text("Result = " + (a * b));
+        });
+    </script>
+
+</body>
+</html>

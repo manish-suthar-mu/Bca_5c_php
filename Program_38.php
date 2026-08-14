@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Addition</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
-<input type="text" id="num1" value="10">
-<input type="text" id="num2" value="5">
+    <h2>Addition using ID Selector</h2>
 
-<button id="add">Add</button>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <input type="number" id="num2" placeholder="Enter number 2">
 
-<p id="result"></p>
+    <button id="add">Add</button>
 
-<script>
-$("#add").click(function() {
-    var a = Number($("#num1").val());
-    var b = Number($("#num2").val());
+    <p id="result"></p>
 
-    $("#result").text("Result = " + (a + b));
-});
-</script>
+    <script>
+        $("#add").click(function() {
+            var a = Number($("#num1").val());
+            var b = Number($("#num2").val());
+
+            $("#result").text("Result = " + (a + b));
+        });
+    </script>
 
 </body>
 </html>
